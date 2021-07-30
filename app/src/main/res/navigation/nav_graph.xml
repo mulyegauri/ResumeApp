@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_navigation">
+
+    <fragment
+        android:id="@+id/home_navigation"
+        android:name="com.example.resumeapp.ui.home.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+    <fragment
+        android:id="@+id/skills_navigation"
+        android:name="com.example.resumeapp.ui.skills.Skills"
+        android:label="fragment_skills"
+        tools:layout="@layout/fragment_skills" >
+    </fragment>
+    <fragment
+        android:id="@+id/experience_navigation"
+        android:name="com.example.resumeapp.ui.experience.Experience"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_experience" />
+    <fragment
+        android:id="@+id/moredetails_navigation"
+        android:name="com.example.resumeapp.ui.moredetails.Moredetails"
+        android:label="fragment_moredetails"
+        tools:layout="@layout/fragment_moredetails" />
+</navigation>
